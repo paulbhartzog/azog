@@ -1,5 +1,64 @@
+   Azog
+-----------
+
+
+
+
+What is it?
+-----------
+
+yet another web application framework
+
+
+Location
+-----------
+
+Azog is currently avalaible at
+	http://github.com/paulbhartzog/azog
+
+
+Version
+-----------
+
+Azog 0.01
+
+
+Documentation
+-------------
+
+None yet:
+	Basically setup the tables, configure settings, and voila.
+
+
+Development
+-----------
+
+see Contact in this document
+
+
+Contact
+-------------
+
 Contact:
 Paul B. Hartzog
 http://PaulBHartzog.org
 PaulBHartzog@paulbhartzog.org
 
+
+
+System-specific Notes
+---------------------
+
+Azog is built using:
+	php
+	mysql
+
+Azog requires:
+	a web server environment that follows .htaccess directives
+
+
+
+-------------------------------------------------------------------------------
+You should have received a copy of the GNU Afferro General Public License
+along with this distribution. If not, it is available here:
+http://www.gnu.org/licenses/agpl-3.0.html
