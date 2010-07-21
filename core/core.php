@@ -61,14 +61,20 @@ function process_request_into_response($request_method_callback, $server_respons
 	if (is_callable($request_method_callback)) {
 		$data = NULL;
 		$uri_parts = explode('/', $_SERVER['REQUEST_URI']);
-		$method = $uri_parts[2];
-		$data = $uri_parts[3];
-		$content = call_user_func($request_method_callback, $method, $data);
+		
+		// need to NOT hard code this
+		// use SITEROOT setting
+		if($uri_parts[4] != ""){
+			$method = $uri_parts[4];
+		}
+		else {
+			$method = "view";
+		}
+		$thing = $uri_parts[3];
+		$content = call_user_func($request_method_callback, $method, $thing);
 	}
 	if (is_callable($server_response_method)) {
-		$data = NULL;
-		$data = $content;
-		$response = call_user_func($server_response_method, $data);
+		$response = call_user_func($server_response_method, $method, $content);
 	}
 	return $response;
 }
@@ -81,7 +87,8 @@ function process_request_into_response($request_method_callback, $server_respons
 
 function deliver_response($response){
 	if(isset($response)){
-		header("{$_SERVER['SERVER_PROTOCOL']} 200 OK");
+//		header("{$_SERVER['SERVER_PROTOCOL']} 200 OK");
+		header('Content-Type: text/html; charset=utf-8');
 		echo $response;
 	}
 // else?
