@@ -11,12 +11,12 @@ define('DELIVERERS_DIR', SITEROOT . '/deliverers' );
 define('MOBILIZERS_DIR', SITEROOT . '/mobilizers' );
 define('LENSES_DIR', SITEROOT . '/lenses' );
 
-// these need to not be here
+// these need to NOT be here
 // dynamically load
 $GLOBALS['Request_Types'] = array();
 $GLOBALS['Request_Types']['GET'] = 'retrieve';
 
-// these need to not be here
+// these need to NOT be here
 // dynamically load
 $GLOBALS['Response_Types'] = array();
 $GLOBALS['Response_Types']['HTML'] = 'html';

@@ -70,7 +70,12 @@ function process_request_into_response($request_method_callback, $server_respons
 		else {
 			$method = "view";
 		}
-		$thing = $uri_parts[3];
+		if($uri_parts[3] != ""){
+			$thing = $uri_parts[3];
+		}
+		else {
+			$thing = "home";
+		}
 		$content = call_user_func($request_method_callback, $method, $thing);
 	}
 	if (is_callable($server_response_method)) {
