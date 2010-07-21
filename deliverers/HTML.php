@@ -18,7 +18,17 @@ function html($method, $data){
 	$return .= "</title>\n";
 	$return .= '<link href="css/main.css" rel="stylesheet" type="text/css" />';
 	$return .= "\n";
-	$return .= "<!-- javascript -->\n";
+	$return .= '<link href="javascript/jQuery/jquery.alerts.css" rel="stylesheet" type="text/css" />';
+	$return .= "\n";
+	$return .= '<script type="text/javascript" src="javascript/jQuery/jquery-1.4.2.js">';
+	$return .= "\n";
+	$return .= "</script>\n";
+	$return .= '<script type="text/javascript" src="javascript/main.js">';
+	$return .= "\n";
+	$return .= "</script>\n";
+	$return .= '<script type="text/javascript" src="javascript/jQuery/jquery.alerts.js">';
+	$return .= "\n";
+	$return .= "</script>\n";
 	$return .= "</head>\n";
 	$return .= "<body>\n";
 
