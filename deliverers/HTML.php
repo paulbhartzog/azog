@@ -16,7 +16,8 @@ function html($method, $data){
 	$return .= "<title>";
 	$return .= "Azog";
 	$return .= "</title>\n";
-	$return .= "<!-- css -->\n";
+	$return .= '<link href="css/main.css" rel="stylesheet" type="text/css" />';
+	$return .= "\n";
 	$return .= "<!-- javascript -->\n";
 	$return .= "</head>\n";
 	$return .= "<body>\n";

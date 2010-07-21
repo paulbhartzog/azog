@@ -42,5 +42,5 @@ deliver_response($response);
 
 
 //tmp
-require_once( SITEROOT . "/shrinking.php");
+require_once( SITEROOT . "/shrinking-notes.php");
 ?>

@@ -38,7 +38,7 @@ deliver
 	use deliverer
 		system must come with one default deliverer or it will not be able to deliverer any responses
 		html response (as delivered by default HTML deliverer) :: 
-			<b><?php echo htmlspecialchars(html($request)); ?></b>
+			<b><?php echo htmlspecialchars(html('view', $request)); ?></b>
 		json response (as delivered by default JSON deliverer) :: 
 			<b><?php echo json($request); ?></b>
 </pre>

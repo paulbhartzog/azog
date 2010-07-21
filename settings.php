@@ -6,6 +6,9 @@ define('SITEROOT', DOCROOT . '/' . SITENAME);
 
 define('CORE_DIR', SITEROOT . '/core' );
 define('CORE', CORE_DIR . '/core.php' );
+define('CSS_DIR', SITENAME . '/css' );
+
+
 define('RECOGNIZERS_DIR', SITEROOT . '/recognizers' );
 define('DELIVERERS_DIR', SITEROOT . '/deliverers' );
 define('MOBILIZERS_DIR', SITEROOT . '/mobilizers' );
